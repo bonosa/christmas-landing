@@ -5,72 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- ===== SEO ===== -->
-  <title>Professional Christmas Light Installation in [Your City] | Free Quote Today</title>
-  <meta name="description" content="Professional Christmas light installation: design, safe install, maintenance, and post-season removal. Fast scheduling in [Your City]. Get a free call-back in minutes." />
+  <title>Professional Christmas Light Installation in [Your City] | [Your Brand]</title>
+  <meta name="description" content="Professional Christmas light installation in [Your City]: design, safe install, maintenance, and post-season removal. Fast scheduling. Free call-back in minutes." />
   <link rel="canonical" href="https://your-domain.com/" />
 
-  <!-- Social cards -->
-  <meta property="og:header" content="Professional Christmas Light Installation | [Your Brand]" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Professional Christmas Light Installation | [Your Brand]" />
   <meta property="og:description" content="We design, install, maintain, and remove your holiday lights. Hassle-free, insured, and fast." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://your-domain.com/" />
   <meta property="og:image" content="https://your-domain.com/assets/hero.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Professional Christmas Light Installation | [Your Brand]" />
-  <meta name="twitter:description" content="Festive lights without the hassle. Free call-back in minutes." />
-  <meta name="twitter:image" content="https://your-domain.com/assets/hero.jpg" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎄</text></svg>">
-  <meta name="theme-color" content="#0b1c2a">
+  <!-- Google Fonts: Festive Headline -->
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "[Your Brand]",
-    "image": ["https://your-domain.com/assets/hero.jpg"],
-    "description": "Professional Christmas light installation: design, install, maintenance, removal.",
-    "areaServed": "[Your City]",
-    "url": "https://your-domain.com/",
-    "telephone": "+1-000-000-0000",
-    "serviceType": "Christmas Light Installation"
-  }
-  </script>
-
-  <!-- (Optional) GA4: replace G-XXXXXXXXXX, then uncomment
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  -->
-
-  <!-- (Optional) Facebook Pixel: replace 1234567890, then uncomment
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1234567890');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" alt=""
-    src="https://www.facebook.com/tr?id=1234567890&ev=PageView&noscript=1"/></noscript>
-  -->
-
-  <!-- ===== Styles ===== -->
   <style>
     :root{
-      --red:#c6132c;         /* rich red */
-      --green:#136f3a;       /* evergreen */
-      --gold:#f6d36a;        /* warm gold */
+      --red:#c6132c;
+      --green:#136f3a;
+      --gold:#f6d36a;
       --snow:#ffffff;
-      --ink:#0b0f14;         /* deep text */
-      --slate:#0b1c2a;       /* bg start */
-      --slate2:#132b3b;      /* bg end */
+      --ink:#0b0f14;
+      --slate:#0b1c2a;
+      --slate2:#132b3b;
       --radius:18px;
       --shadow:0 12px 30px rgba(0,0,0,.15);
       --maxw:1100px;
@@ -80,84 +37,48 @@
       background:linear-gradient(180deg,var(--slate) 0%, var(--slate2) 100%);
       color:var(--ink);
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
     }
     .container{max-width:var(--maxw);margin:0 auto;padding:20px}
     a{color:var(--red);text-decoration:none}
 
-    /* === CLASSY FULL-BLEED HERO === */
-    .hero-wrap{
-      position:relative;
-      min-height:clamp(560px, 82vh, 860px);
-      color:#fff;
-      isolation:isolate;
-    }
-    .hero-media{ position:absolute; inset:0; z-index:-1; }
-    .hero-media img{
-      width:100%; height:100%;
-      object-fit:cover; object-position:center;
-      display:block;
-      filter:saturate(1.05) contrast(1.02);
-    }
-    .hero-scrim{
-      position:absolute; inset:0;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.58) 62%, rgba(0,0,0,.68) 100%),
-        radial-gradient(1000px 420px at 15% 20%, rgba(198,19,44,.25), transparent 60%),
-        radial-gradient(900px 380px at 85% 30%, rgba(19,111,58,.25), transparent 60%);
-    }
-    .hero-grid{
-      position:relative;
-      display:grid;
-      grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr);
-      gap:28px;
-      padding: clamp(28px, 5vw, 56px) 20px;
-      align-items:center;
-      max-width:var(--maxw);
-    }
-    .hero-kicker{
-      display:inline-block;
-      font-size:clamp(12px,1.6vw,14px);
-      letter-spacing:.08em; text-transform:uppercase;
-      background: rgba(255,255,255,.14);
-      padding:6px 10px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.25);
-      margin-bottom:10px;
-    }
+    /* Hero section */
+    .hero-wrap{position:relative;min-height:80vh;color:#fff;isolation:isolate;}
+    .hero-media{position:absolute;inset:0;z-index:-1;}
+    .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;}
+    .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.65));}
+
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:50px 20px;align-items:center;max-width:var(--maxw);}
+    .hero-kicker{display:inline-block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;margin-bottom:10px;}
+
+    /* Festive headline + tagline */
     .hero-headline{
       margin:6px 0 10px;
-      font-weight:900; line-height:1.05;
-      font-size: clamp(28px, 5.2vw, 56px);
-      text-shadow: 0 2px 10px rgba(0,0,0,.45);
+      font-family: 'Mountains of Christmas', cursive;
+      font-weight:700;
+      line-height:1.1;
+      font-size: clamp(22px, 3.5vw, 40px); /* smaller, more balanced */
+      text-shadow:0 2px 10px rgba(0,0,0,.45);
     }
     .hero-sub{
-      font-size:clamp(15px,2vw,18px);
+      font-family: 'Mountains of Christmas', cursive;
+      font-size: clamp(14px, 2vw, 18px);
       color:#f1f5f9; opacity:.95;
       margin:0 0 14px;
     }
-    .hero-points{
-      display:flex; gap:12px; flex-wrap:wrap;
-      list-style:none; padding:0; margin:6px 0 0;
-    }
-    .hero-points li{
-      background: rgba(255,255,255,.16);
-      border:1px solid rgba(255,255,255,.22);
-      padding:8px 12px; border-radius:999px;
-      font-size:13px;
-    }
-    .card{
-      background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px
-    }
+
+    .hero-points{display:flex;gap:12px;flex-wrap:wrap;list-style:none;padding:0;margin:6px 0 0;}
+    .hero-points li{background:rgba(255,255,255,.16);padding:8px 12px;border-radius:999px;font-size:13px;}
+
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
     label{font-size:13px;color:#334155}
-    input,select,button,textarea{font:inherit}
-    input,select,textarea{width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
+    input,select,button{font:inherit}
+    input,select{width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
     button{border:0;border-radius:12px;padding:14px 16px;font-weight:700;cursor:pointer;background:linear-gradient(90deg,var(--red),#e41e3b);color:#fff;box-shadow:0 6px 16px rgba(198,19,44,.35)}
     button:hover{filter:brightness(1.05)}
     .disclaimer{font-size:12px;color:#475569}
 
-    /* Simple features band under hero */
     .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
-    .feature{background:rgba(255,255,255,.95);border-radius:16px;padding:18px;display:flex;gap:12px;align-items:flex-start;box-shadow:var(--shadow)}
+    .feature{background:#fff;border-radius:16px;padding:18px;display:flex;gap:12px;align-items:flex-start;box-shadow:var(--shadow)}
     .feature .icon{font-size:22px}
     .feature h3{margin:0 0 6px;font-size:16px}
     .trust{display:flex;gap:12px;flex-wrap:wrap;color:#fff;opacity:.95;margin-top:8px}
@@ -166,23 +87,20 @@
     .footer small{opacity:.85}
 
     @media (max-width: 900px){
-      .hero-grid{ grid-template-columns:1fr; gap:18px; }
-      .features{ grid-template-columns:1fr; }
+      .hero-grid{grid-template-columns:1fr;gap:18px;}
+      .features{grid-template-columns:1fr;}
     }
   </style>
 </head>
-
 <body>
-  <!-- ===== HERO ===== -->
+  <!-- Hero -->
   <header class="hero-wrap">
-    <div class="hero-media" aria-hidden="true">
-      <!-- Replace with your own image path -->
-      <img src="assets/hero.jpg" alt="">
+    <div class="hero-media">
+      <img src="assets/hero.jpg" alt="Professional outdoor Christmas light installation">
       <div class="hero-scrim"></div>
     </div>
 
     <div class="container hero-grid">
-      <!-- Left: copy -->
       <div class="hero-copy">
         <div class="hero-kicker">Festive • Safe • Fast</div>
         <h1 class="hero-headline">Professional Christmas Light Services</h1>
@@ -194,21 +112,20 @@
         </ul>
       </div>
 
-      <!-- Right: form -->
       <div class="card hero-form" aria-labelledby="quote-title">
-        <h2 id="quote-title" style="margin-top:0">Free Call-Back in Minutes</h2>
+        <h2 id="quote-title">Free Call-Back in Minutes</h2>
         <form id="lead-form" autocomplete="on">
           <div>
             <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" placeholder="e.g., Taylor Johnson" required />
+            <input id="name" name="name" type="text" required />
           </div>
           <div>
             <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="e.g., (412) 555-0199" required />
+            <input id="phone" name="phone" type="tel" required />
           </div>
           <div>
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <input id="email" name="email" type="email" required />
           </div>
           <div>
             <label for="time">Preferred Call-Back Time</label>
@@ -221,14 +138,14 @@
             </select>
           </div>
           <button type="submit">Get My Free Quote 🎄</button>
-          <div class="disclaimer">By submitting, you agree we may contact you about your lighting project. We never sell your info.</div>
+          <div class="disclaimer">By submitting, you agree we may contact you about your project. We never sell your info.</div>
           <div id="form-status" role="status" style="margin-top:6px;font-size:13px"></div>
         </form>
       </div>
     </div>
   </header>
 
-  <!-- ===== FEATURE STRIP ===== -->
+  <!-- Features -->
   <div class="container">
     <div class="features">
       <div class="feature"><div class="icon">🎯</div><div><h3>Custom Design</h3><p>Rooflines, trees, and trim planned for your property.</p></div></div>
@@ -238,19 +155,16 @@
     <div class="trust">Trusted by homeowners, HOAs, and storefronts across <strong>[Your City]</strong>.</div>
   </div>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Footer -->
   <div class="container footer">
     <small>© <span id="year"></span> [Your Brand] • <a href="#">Privacy</a> • <a href="#">Contact</a></small>
   </div>
 
-  <!-- ===== Scripts ===== -->
   <script>
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // ===== FORM HANDLER =====
-    // 1) Replace with your deployed Google Apps Script Web App URL (from your Sheet-bound script deployment)
-    const SCRIPT_URL = 'https://script.google.com/macros/s/REPLACE_WITH_YOUR_WEB_APP_ID/exec';
+    // === FORM HANDLER ===
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz5Aon6MqbsmrnUoo_nx21yoDknL21_5VXRzVeZ4SRqZxMiLZaYX_py-5165Lw_WchQ/exec';
 
     const form = document.getElementById('lead-form');
     const statusEl = document.getElementById('form-status');
@@ -263,7 +177,6 @@
       const data = Object.fromEntries(new FormData(form).entries());
 
       try {
-        // Use URL-encoded body => simple CORS, no preflight
         const res = await fetch(SCRIPT_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
@@ -271,21 +184,18 @@
         });
 
         const text = await res.text();
-        // Try to parse if JSON returned, else fallback
         let ok = false;
         try { ok = JSON.parse(text).ok; } catch(_) { ok = res.ok; }
 
         if (ok) {
           statusEl.style.color = 'green';
           statusEl.textContent = 'Success! We’ll be in touch soon.';
-          try { fbq && fbq('track','Lead'); } catch(_) {}
-          try { gtag && gtag('event','generate_lead'); } catch(_) {}
           form.reset();
         } else {
-          throw new Error('Submission failed.');
+          throw new Error(text || 'Submission failed');
         }
       } catch (err) {
-        console.error(err);
+        console.error('Submit error:', err);
         statusEl.style.color = 'crimson';
         statusEl.textContent = 'Hmm, something went wrong. Please call or text us.';
       }
