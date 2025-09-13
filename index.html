@@ -7,16 +7,37 @@
   <!-- ===== SEO ===== -->
   <title>Professional Christmas Light Installation in [Your City] | [Your Brand]</title>
   <meta name="description" content="Professional Christmas light installation in [Your City]: design, safe install, maintenance, and post-season removal. Fast scheduling. Free call-back in minutes." />
-  <link rel="canonical" href="https://your-domain.com/" />
+  <link rel="canonical" href="https://your-vercel-domain.vercel.app/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Professional Christmas Light Installation | [Your Brand]" />
   <meta property="og:description" content="We design, install, maintain, and remove your holiday lights. Hassle-free, insured, and fast." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-domain.com/" />
-  <meta property="og:image" content="https://your-domain.com/assets/hero.jpg" />
+  <meta property="og:url" content="https://your-vercel-domain.vercel.app/" />
+  <meta property="og:image" content="https://your-vercel-domain.vercel.app/assets/hero.jpg" />
 
-  <!-- Google Fonts: Festive Headline -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Professional Christmas Light Installation | [Your Brand]" />
+  <meta name="twitter:description" content="Festive lights without the hassle. Free call-back in minutes." />
+  <meta name="twitter:image" content="https://your-vercel-domain.vercel.app/assets/hero.jpg" />
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "[Your Brand]",
+    "image": ["https://your-vercel-domain.vercel.app/assets/hero.jpg"],
+    "description": "Professional Christmas light installation: design, install, maintenance, removal.",
+    "areaServed": "[Your City]",
+    "url": "https://your-vercel-domain.vercel.app/",
+    "telephone": "[Your Phone]",
+    "serviceType": "Christmas Light Installation"
+  }
+  </script>
+
+  <!-- Festive Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
@@ -41,22 +62,38 @@
     .container{max-width:var(--maxw);margin:0 auto;padding:20px}
     a{color:var(--red);text-decoration:none}
 
+    /* Twinkling stars overlay */
+    .twinkle {
+      pointer-events:none;
+      position:fixed; inset:0;
+      background-image:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.8), transparent),
+        radial-gradient(1.5px 1.5px at 70% 80%, rgba(255,255,255,.7), transparent),
+        radial-gradient(2px 2px at 40% 60%, rgba(255,255,255,.6), transparent);
+      background-repeat: repeat;
+      animation: twinkleAnim 5s linear infinite;
+      z-index:1;
+    }
+    @keyframes twinkleAnim {
+      0%, 100% { opacity: .9; }
+      50% { opacity: .5; }
+    }
+
     /* Hero section */
     .hero-wrap{position:relative;min-height:80vh;color:#fff;isolation:isolate;}
-    .hero-media{position:absolute;inset:0;z-index:-1;}
+    .hero-media{position:absolute;inset:0;z-index:-2;}
     .hero-media img{width:100%;height:100%;object-fit:cover;object-position:center;}
-    .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.65));}
+    .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.65));z-index:-1;}
 
     .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;padding:50px 20px;align-items:center;max-width:var(--maxw);}
     .hero-kicker{display:inline-block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;margin-bottom:10px;}
 
-    /* Festive headline + tagline */
     .hero-headline{
       margin:6px 0 10px;
       font-family: 'Mountains of Christmas', cursive;
       font-weight:700;
       line-height:1.1;
-      font-size: clamp(22px, 3.5vw, 40px); /* smaller, more balanced */
+      font-size: clamp(22px, 3.5vw, 40px);
       text-shadow:0 2px 10px rgba(0,0,0,.45);
     }
     .hero-sub{
@@ -69,11 +106,33 @@
     .hero-points{display:flex;gap:12px;flex-wrap:wrap;list-style:none;padding:0;margin:6px 0 0;}
     .hero-points li{background:rgba(255,255,255,.16);padding:8px 12px;border-radius:999px;font-size:13px;}
 
-    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;z-index:2;position:relative;}
     label{font-size:13px;color:#334155}
     input,select,button{font:inherit}
     input,select{width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
-    button{border:0;border-radius:12px;padding:14px 16px;font-weight:700;cursor:pointer;background:linear-gradient(90deg,var(--red),#e41e3b);color:#fff;box-shadow:0 6px 16px rgba(198,19,44,.35)}
+
+    /* Festive button with glow */
+    button {
+      position:relative;
+      border:0;
+      border-radius:12px;
+      padding:14px 16px;
+      font-weight:700;
+      cursor:pointer;
+      background:linear-gradient(90deg,var(--red),#e41e3b);
+      color:#fff;
+      box-shadow:0 0 15px rgba(246,211,106,.45);
+      overflow:hidden;
+    }
+    button::before {
+      content:"";
+      position:absolute; inset:-3px;
+      border-radius:inherit;
+      background:linear-gradient(135deg, var(--red), var(--green), var(--gold));
+      z-index:-1;
+      filter:blur(6px);
+      opacity:.6;
+    }
     button:hover{filter:brightness(1.05)}
     .disclaimer{font-size:12px;color:#475569}
 
@@ -93,10 +152,13 @@
   </style>
 </head>
 <body>
+  <!-- Twinkling overlay -->
+  <div class="twinkle"></div>
+
   <!-- Hero -->
   <header class="hero-wrap">
     <div class="hero-media">
-      <img src="assets/hero.jpg" alt="Professional outdoor Christmas light installation">
+      <img src="assets/hero.jpg" alt="Professional outdoor Christmas light installation" loading="eager">
       <div class="hero-scrim"></div>
     </div>
 
@@ -165,6 +227,7 @@
 
     // === FORM HANDLER ===
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz5Aon6MqbsmrnUoo_nx21yoDknL21_5VXRzVeZ4SRqZxMiLZaYX_py-5165Lw_WchQ/exec';
+
 
     const form = document.getElementById('lead-form');
     const statusEl = document.getElementById('form-status');
